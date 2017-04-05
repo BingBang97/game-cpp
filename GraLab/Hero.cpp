@@ -27,7 +27,10 @@ void Hero::toString()
 	plik.open("postacie.txt", ios::out | ios::app);
 	if (plik.good())
 		plik << getName() << " " << getHealth() << " " << getDmg() << " " << getDef() << " " << experience << " " << type << " H" << endl;
+	cout << "co sie kurwa dzieje"<<endl;
 	plik.close();
+	if(!plik.good())
+	cout << "Nie mozna otworzyc pliku!" << endl;
 }
 
 

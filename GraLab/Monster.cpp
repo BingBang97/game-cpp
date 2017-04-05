@@ -27,14 +27,11 @@ void Monster::toString()
 	if (plik.good())
 		plik << getName() << " " << getHealth() << " " << getDmg() << " " << getDef() << " " << rewardValue << " " << type << " M" << endl;
 	plik.close();
+	if (!plik.good())
+		cout << "Nie mozna otworzyc pliku!" << endl;
 }
 
 
-void Monster::show(Monster* show, int orderNumber)
-{
-	cout << "rewardValue: " << show->getValue() << endl;
-	cout << "Type: " << show->getMonsterType() << endl;
-}
 Monster::Monster() {} // konstruktor domyslny																			//konstruktor klasy z ktorej dziedziczy
 Monster::Monster(const string &name, const int &hp, const int &dmg, const int &def, const int &value, const string &type) : CharacterBase(name, hp, dmg, def), rewardValue(value), type(type) {}
 Monster::~Monster() {} // destruktor

@@ -10,7 +10,6 @@ private:
 	string type;
 public:
 	void toString();
-	void show(Monster *show, int orderNumber);
 	void setRewardValue(int rewardValueToSet);
 	void setMonsterType(string MonsterTypeToSet);
 	int getValue();
