@@ -1,0 +1,4 @@
+nocotam 1 1 1 1 tajp H
+test 6 7 4 1 testuje H
+wrog 1 1 1 123 wrog M
+

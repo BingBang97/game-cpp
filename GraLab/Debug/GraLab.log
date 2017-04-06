@@ -1,0 +1,10 @@
+﻿  Point.cpp
+c:\users\wojtek\desktop\gralab\gralab\point.cpp(15): warning C4804: "%": niebezpieczne użycie typu "bool" w operacji
+c:\users\wojtek\desktop\gralab\gralab\point.cpp(38): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+c:\users\wojtek\desktop\gralab\gralab\point.cpp(38): warning C4552: "%": operator nie ma żadnego wpływu; oczekiwano operatora z efektem ubocznym
+c:\users\wojtek\desktop\gralab\gralab\point.cpp(39): warning C4244: "=": konwersja z "double" do "int", możliwa utrata danych
+c:\users\wojtek\desktop\gralab\gralab\point.cpp(39): warning C4552: "%": operator nie ma żadnego wpływu; oczekiwano operatora z efektem ubocznym
+  GraLab.cpp
+  Generowanie kodu...
+  GraLab.vcxproj -> C:\Users\Wojtek\Desktop\GraLab\Debug\GraLab.exe
+  GraLab.vcxproj -> C:\Users\Wojtek\Desktop\GraLab\Debug\GraLab.pdb (Partial PDB)

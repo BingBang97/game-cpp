@@ -28,33 +28,74 @@ void CharacterEditor::loadFromFile()
 	plik.open("postacie.txt", ios::in);
 	if (plik.good()) {
 		plik.seekg(0);
-
-		plik >> name >> hp >> dmg >> def >> attribute_1 >> type >> objectType;
-
-		if (objectType == 'M') {
-			m = new Monster(name, hp, dmg, def, attribute_1, type);
-			addMonster(m);
-
-			if (objectType == 'H') {
-				h = new Hero(name, hp, dmg, def, attribute_1, type);
-				addCharacter(h);
+		while (!plik.eof()) {
+			plik >> name >> hp >> dmg >> def >> attribute_1 >> type >> objectType;
+			if (plik.eof())break;
+			if (objectType == 'M') {
+				m = new Monster(name, hp, dmg, def, attribute_1, type);
+				addMonster(m);
 			}
+				if (objectType == 'H') {
+					h = new Hero(name, hp, dmg, def, attribute_1, type);
+					addCharacter(h);
+				}
+			
 		}
-
 	}
 	plik.close();
 }
 
-void CharacterEditor::editMonster(int monsterNumber, Monster * monster)
+void CharacterEditor::editMonster(int monsterNumber)
 {
-	monsters[monsterNumber] = new Monster();
-	addMonster(monster);
+	string name, type;
+	int  healthPoints, damage, defence, value;
+
+	cout << "Podaj atrybuty wroga: " << endl;
+	cout << "Name: ";
+	cin >> name;
+	cout << "Hp: ";
+	cin >> healthPoints;
+	cout << "Dmg: ";
+	cin >> damage;
+	cout << "Def: ";
+	cin >> defence;
+	cout << "Type: ";
+	cin >> type;
+	cout << "RevardValue: ";
+	cin >> value;
+	monsters[monsterNumber - 1]->setName(name);
+	monsters[monsterNumber - 1]->setHealth(healthPoints);
+	monsters[monsterNumber - 1]->setDmg(damage);
+	monsters[monsterNumber - 1]->setDef(defence);
+	monsters[monsterNumber - 1]->setMonsterType(type);
+	monsters[monsterNumber - 1]->setRewardValue(value);
 }
 
-void CharacterEditor::editHero(int number, Hero * hero)
+void CharacterEditor::editHero(int number)
 {
-	heroes[number] = new Hero();
-	heroes.push_back(hero);
+	int  healthPoints, damage, defence, xp;
+	string name, type;
+
+
+	cout << "Podaj atrybuty postaci: " << endl;
+	cout << "Name: ";
+	cin >> name;
+	cout << "Hp: ";
+	cin >> healthPoints;
+	cout << "Dmg: ";
+	cin >> damage;
+	cout << "Def: ";
+	cin >> defence;
+	cout << "Type: ";
+	cin >> type;
+	cout << "Xp: ";
+	cin >> xp;
+	heroes[number - 1]->setName(name);
+	heroes[number - 1]->setHealth(healthPoints);
+	heroes[number - 1]->setDmg(damage);
+	heroes[number - 1]->setDef(defence);
+	heroes[number - 1]->setType(type);
+	heroes[number - 1]->setExperience(xp);
 }
 
 
@@ -67,12 +108,14 @@ void CharacterEditor::addMonster(Monster *monster) {
 }
 
 void CharacterEditor::showCharacters() {
-	for (int i = 0; i < heroes.size(); i++) {
+	for (unsigned int i = 0; i < heroes.size(); i++) {
+		cout << "HERO NR.: " << i+1 << endl;
 		cout << heroes[i] << endl;
 	}
 }
 void CharacterEditor::showMonsters() {
-	for (int i = 0; i < monsters.size(); i++) {
+	for (unsigned int i = 0; i < monsters.size(); i++) {
+		cout << "MONSTER NR.: "<<i+1 << endl;
 		cout << monsters[i] << endl;
 	}
 }

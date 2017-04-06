@@ -18,7 +18,6 @@ public:
 	Monster();
 	Monster(const std::string &name, const int &hp, const int &dmg, const int &def, const int &xp, const std::string &type);
 
-	//Destruktor
 	~Monster();
 };
 

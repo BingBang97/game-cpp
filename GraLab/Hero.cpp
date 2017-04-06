@@ -33,9 +33,9 @@ void Hero::toString()
 }
 
 
-Hero::Hero() {} // konstruktor domyslny																			//konstruktor klasy bazowej
+Hero::Hero() {} 																		//konstruktor klasy bazowej
 Hero::Hero(const string &name, const int &hp, const int &dmg, const int &def, const int &xp, const string &type) : CharacterBase(name, hp, dmg, def), experience(xp), type(type) {}
-Hero::~Hero() {} // destruktor
+Hero::~Hero() {} 
 
 ostream &operator<<(ostream &out, Hero *character) {
 	out << "Nazwa: " << character->getName() << endl

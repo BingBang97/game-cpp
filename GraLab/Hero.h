@@ -8,22 +8,17 @@ private:
 	int experience;
 	std::string type;
 public:
-	//Functions
 	void toString();
 
-	//Setters
 	void setExperience(int XptoSet);
-	void setType(std::string typeToSet);
+	void setType(string typeToSet);
 
-	//Getters
 	int getXp();
-	std::string getType();
+	string getType();
 
-	//Konstruktory
 	Hero();
-	Hero(const std::string &name, const int &hp, const int &dmg, const int &def, const int &xp, const std::string &type);
+	Hero(const string &name, const int &hp, const int &dmg, const int &def, const int &xp, const string &type);
 
-	//Destruktor
 	~Hero();
 };
 

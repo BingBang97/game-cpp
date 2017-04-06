@@ -20,7 +20,6 @@ public:
 	void showMonsters();
 	void saveToFile();
 	void loadFromFile();
-	void editMonster(int number, Monster *monster);
-	void editHero(int number, Hero *hero);
-	//void clear();
+	void editMonster(int monsterNumber);
+	void editHero(int number);
 };

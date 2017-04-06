@@ -16,7 +16,7 @@ int menu::Menu()
 	Monster *monster;
 	CharacterEditor editor;
 	string name, type;
-
+	
 	cout << "Witamy w aplikacji do tworzenia i edycji postaci" << endl;
 	do {
 		cout << "Wybierz zadanie ktore chcesz zrealizowac: " << endl;
@@ -37,8 +37,6 @@ int menu::Menu()
 			cout << "Program zostanie wylaczony" << endl;
 			system("pause");
 			return 0;
-			//delete character;
-			//delete monster;
 			break;
 
 		case 1:
@@ -62,7 +60,7 @@ int menu::Menu()
 			cout << "Xp: ";
 			cin >> xp;
 
-			character = new Hero(name, healthPoints, damage, defence, xp, type); // tutaj wywolujesz konstruktor (pamietaj dac potem "delete character;" w miejscu gdzie konczysz dzialanie programu
+			character = new Hero(name, healthPoints, damage, defence, xp, type); 
 			editor.addCharacter(character);
 			break;
 		case 3:
@@ -99,44 +97,15 @@ int menu::Menu()
 			editor.showCharacters();
 			cout << "Ktora postac chcesz edytowac?\nWybor: ";
 			cin >> wyborPostaci;
-
-			cout << "Podaj atrybuty postaci: " << endl;
-			cout << "Name: ";
-			cin >> name;
-			cout << "Hp: ";
-			cin >> healthPoints;
-			cout << "Dmg: ";
-			cin >> damage;
-			cout << "Def: ";
-			cin >> defence;
-			cout << "Type: ";
-			cin >> type;
-			cout << "Xp: ";
-			cin >> xp;
-			character = new Hero(name, healthPoints, damage, defence, xp, type);
-			editor.editHero(wyborPostaci - 1, character);
+			editor.editHero(wyborPostaci);
 			break;
 
 		case 8:
 			editor.showMonsters();
 			cout << "Ktorego wroga chcesz edytowac?\nWybor: ";
 			cin >> wyborPostaci;
-
-			cout << "Podaj atrybuty wroga: " << endl;
-			cout << "Name: ";
-			cin >> name;
-			cout << "Hp: ";
-			cin >> healthPoints;
-			cout << "Dmg: ";
-			cin >> damage;
-			cout << "Def: ";
-			cin >> defence;
-			cout << "Type: ";
-			cin >> type;
-			cout << "RevardValue: ";
-			cin >> value;
-			monster = new Monster(name, healthPoints, damage, defence, value, type);
-			editor.editMonster(wyborPostaci - 1, monster);
+			editor.editMonster(wyborPostaci);
+			break;
 		default:
 			cout << "Zly wybor" << endl;
 			break;
