@@ -10,11 +10,11 @@ private:
 public:
 
 	Point();
-	Point(const int&x, const int&y);
+	Point(const int x, const int y);
 	~Point();
 	bool operator==(const Point &a);
 	Point operator+ (const Point &b);
 	Point operator-(const Point &c);
-	Point operator*(const double &d);
+	Point operator*(int d);
 };
 
