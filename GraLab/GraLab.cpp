@@ -11,9 +11,9 @@ using namespace std;
 
 void Test(){
 	
-	Point p1 = Point(10, 90);
-	Point p2 = Point(10, 20);
-	Point p3 = Point(80, 10);
+	Point p1(10, 90);
+	Point p2(10, 20);
+	Point p3(80, 10);
 	assert(p1+p2==p3);
 	assert(p1-p2 == p3);
 	//assert(p1 * p2 == p3);
