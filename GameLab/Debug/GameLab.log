@@ -1,0 +1,177 @@
+﻿  Map.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): error C2664: 'std::vector<std::shared_ptr<Tile>,std::allocator<_Ty>>::vector(const std::vector<_Ty,std::allocator<_Ty>> &)': cannot convert argument 1 from 'std::shared_ptr<Tree>' to 'const std::allocator<_Ty> &'
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): note: Reason: cannot convert from 'std::shared_ptr<Tree>' to 'const std::allocator<_Ty>'
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::shared_ptr<Tree>>(_Objty *,std::shared_ptr<Tree> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::shared_ptr<Tree>>(_Objty *,std::shared_ptr<Tree> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(996): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::shared_ptr<Tree>>(std::allocator<_Ty> &,_Objty *,std::shared_ptr<Tree> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>>,
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(995): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::shared_ptr<Tree>>(std::allocator<_Ty> &,_Objty *,std::shared_ptr<Tree> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>>,
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(930): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,std::shared_ptr<Tree>>(_Ty *,std::shared_ptr<Tree> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(929): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,std::shared_ptr<Tree>>(_Ty *,std::shared_ptr<Tree> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\users\wojtek\documents\visual studio 2015\projects\gamelab\gamelab\map.cpp(14): note: see reference to function template instantiation 'void std::vector<std::vector<std::shared_ptr<Tile>,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>::emplace_back<std::shared_ptr<Tree>>(std::shared_ptr<Tree> &&)' being compiled
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  c:\users\wojtek\documents\visual studio 2015\projects\gamelab\gamelab\map.cpp(14): note: see reference to function template instantiation 'void std::vector<std::vector<std::shared_ptr<Tile>,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>::emplace_back<std::shared_ptr<Tree>>(std::shared_ptr<Tree> &&)' being compiled
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): error C2664: 'std::vector<std::shared_ptr<Tile>,std::allocator<_Ty>>::vector(const std::vector<_Ty,std::allocator<_Ty>> &)': cannot convert argument 1 from 'std::shared_ptr<Grass>' to 'const std::allocator<_Ty> &'
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): note: Reason: cannot convert from 'std::shared_ptr<Grass>' to 'const std::allocator<_Ty>'
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::shared_ptr<Grass>>(_Objty *,std::shared_ptr<Grass> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::shared_ptr<Grass>>(_Objty *,std::shared_ptr<Grass> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(996): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::shared_ptr<Grass>>(std::allocator<_Ty> &,_Objty *,std::shared_ptr<Grass> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>>,
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(995): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::shared_ptr<Grass>>(std::allocator<_Ty> &,_Objty *,std::shared_ptr<Grass> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>>,
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(930): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,std::shared_ptr<Grass>>(_Ty *,std::shared_ptr<Grass> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(929): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,std::shared_ptr<Grass>>(_Ty *,std::shared_ptr<Grass> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\users\wojtek\documents\visual studio 2015\projects\gamelab\gamelab\map.cpp(16): note: see reference to function template instantiation 'void std::vector<std::vector<std::shared_ptr<Tile>,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>::emplace_back<std::shared_ptr<Grass>>(std::shared_ptr<Grass> &&)' being compiled
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  c:\users\wojtek\documents\visual studio 2015\projects\gamelab\gamelab\map.cpp(16): note: see reference to function template instantiation 'void std::vector<std::vector<std::shared_ptr<Tile>,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>::emplace_back<std::shared_ptr<Grass>>(std::shared_ptr<Grass> &&)' being compiled
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): error C2664: 'std::vector<std::shared_ptr<Tile>,std::allocator<_Ty>>::vector(const std::vector<_Ty,std::allocator<_Ty>> &)': cannot convert argument 1 from 'std::shared_ptr<Wall>' to 'const std::allocator<_Ty> &'
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): note: Reason: cannot convert from 'std::shared_ptr<Wall>' to 'const std::allocator<_Ty>'
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(737): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::shared_ptr<Wall>>(_Objty *,std::shared_ptr<Wall> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(857): note: see reference to function template instantiation 'void std::allocator<_Ty>::construct<_Objty,std::shared_ptr<Wall>>(_Objty *,std::shared_ptr<Wall> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(996): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::shared_ptr<Wall>>(std::allocator<_Ty> &,_Objty *,std::shared_ptr<Wall> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>>,
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xmemory0(995): note: see reference to function template instantiation 'void std::allocator_traits<_Alloc>::construct<_Ty,std::shared_ptr<Wall>>(std::allocator<_Ty> &,_Objty *,std::shared_ptr<Wall> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>>,
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>,
+              _Objty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(930): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,std::shared_ptr<Wall>>(_Ty *,std::shared_ptr<Wall> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(929): note: see reference to function template instantiation 'void std::_Wrap_alloc<std::allocator<_Ty>>::construct<_Ty,std::shared_ptr<Wall>>(_Ty *,std::shared_ptr<Wall> &&)' being compiled
+          with
+          [
+              _Ty=std::vector<std::shared_ptr<Tile>,std::allocator<std::shared_ptr<Tile>>>
+          ]
+  c:\users\wojtek\documents\visual studio 2015\projects\gamelab\gamelab\map.cpp(18): note: see reference to function template instantiation 'void std::vector<std::vector<std::shared_ptr<Tile>,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>::emplace_back<std::shared_ptr<Wall>>(std::shared_ptr<Wall> &&)' being compiled
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  c:\users\wojtek\documents\visual studio 2015\projects\gamelab\gamelab\map.cpp(18): note: see reference to function template instantiation 'void std::vector<std::vector<std::shared_ptr<Tile>,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>::emplace_back<std::shared_ptr<Wall>>(std::shared_ptr<Wall> &&)' being compiled
+          with
+          [
+              _Ty=std::shared_ptr<Tile>
+          ]
+  Generating Code...
+  Compiling...
+  menu.cpp
+  Generating Code...
+c:\users\wojtek\documents\visual studio 2015\projects\gamelab\gamelab\menu.cpp(130): warning C4715: 'menu::Menu': not all control paths return a value

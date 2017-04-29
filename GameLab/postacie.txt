@@ -1,0 +1,3 @@
+name 1 11 3 5 type H
+wrog 5 5 5 9 tajp M
+xxxx 3 3 3 5 tttt H
