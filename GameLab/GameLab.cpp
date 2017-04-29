@@ -21,13 +21,14 @@ void Test() {
 
 int main()
 {
+	/*
 	Point *punkt1=new Point(5,10);
 	Point punkt2(7,6);
 	Point punkt3(4, 9);
 	Point p;
 	p.wskaznik(punkt1);
 	p.referenjca(punkt2);
-	p.wartosc(punkt3);
+	p.wartosc(punkt3);*/
 	//Test();
 	menu oMenu;
 	oMenu.Menu();

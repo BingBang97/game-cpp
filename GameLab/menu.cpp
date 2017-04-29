@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "menu.h"
 #include"Hero.h"
+#include"Tile.h"
 #include"Monster.h"
 #include"CharacterEditor.h"
 #include<iostream>
@@ -15,6 +16,7 @@ int menu::Menu()
 	Hero *character;
 	Monster *monster;
 	CharacterEditor editor;
+	Tile p;
 	string name, type;
 
 	cout << "Witamy w aplikacji do tworzenia i edycji postaci" << endl;
@@ -29,6 +31,7 @@ int menu::Menu()
 		cout << "6 - Pokaz liste wrogow" << endl;
 		cout << "7 - Modyfikacja istniejacej postaci" << endl;
 		cout << "8 - Modyfikacja istniejacego wroga" << endl;
+		cout << "9 - Wyswietl mape" << endl;
 		cout << "Opcja: ";
 		cin >> choice;
 
@@ -105,6 +108,12 @@ int menu::Menu()
 			cout << "Ktorego wroga chcesz edytowac?\nWybor: ";
 			cin >> wyborPostaci;
 			editor.editMonster(wyborPostaci);
+			break;
+		case 9:
+			p.createTile();
+			p.createMap();
+			cout << "mapa wygenerowana: " << endl;
+			p.showMap();
 			break;
 		default:
 			cout << "Zly wybor" << endl;
