@@ -7,8 +7,9 @@ class Tree:public Tile
 private:
 	string tree;
 public:
-	string getTileType();
+	void draw();
 	Tree(const int x, const int y);
+	Tree();
 	~Tree();
 };
 

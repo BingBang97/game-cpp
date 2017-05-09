@@ -1,56 +1,40 @@
 #include "stdafx.h"
 #include "Map.h"
 
-
-void Map::generateMap(int length,int width)
+void Map::generateMap(int width, int heigth)
 {
-	//Tile.resize(width);
-	for ( int i = 0; i < length; i++)
+	maps.resize(width);
+	for ( int i = 0; i < width; i++)
 	{
-		for ( int j = 0; j < width; j++)
+		for ( int j = 0; j <heigth; j++)
 		{
 			int los = rand() % 11 ;
-			if (los>5 && los<8)
-				maps.emplace_back(make_shared<Tree>(i, j));
-			if (los >= 0 && los <= 5)
-				maps.emplace_back(make_shared<Grass>(i, j));
-			if (los>7 && los<=10)
-				maps.emplace_back(make_shared<Wall>(i, j));
-		}
-	}
-	cout << "generateMap" << endl;
-}
-
-void Map::drawMap(int length, int width)
-{
-	int x = 0;
-	for (int i = 0; i < length; i++)
-	{
-		for (int j = 0; j < width; j++)
-		{
-			x++;
-			cout << maps[i][j]<<" ";
-			if (x == length)
+			if (los > 5 && los < 8)
 			{
-				cout << endl;
-				x = 0;
+				maps[i].push_back(make_shared<Tree>(i, j));
 			}
-
+			if (los >= 0 && los <= 5)
+			{
+				maps[i].push_back(make_shared<Grass>(i, j));
+			}
+			if (los > 7 && los <= 10)
+			{
+				maps[i].push_back(make_shared<Wall>(i, j));
+			}
 		}
 	}
-	cout << "drawMap" << endl;
+	cout << maps.size() << endl;
 }
 
-void Map::toString()
+void Map::drawMap(int width, int heigth)
 {
-	string map;
-	for (int i = 0; i < length; i++)
+	for (int i = 0; i < width; i++)
 	{
-		for (int j = 0; j < width; j++)
+		for (int j = 0; j < heigth; j++)
 		{
-			//map += to_string(maps[i][j]);
-
+			maps[i][j]->draw();
 		}
+		cout << endl;
 	}
 }
 
@@ -61,9 +45,4 @@ Map::Map()
 
 Map::~Map()
 {
-}
-
-ostream & operator<<(ostream & out, Tile * m)
-{
-	out << m;
 }

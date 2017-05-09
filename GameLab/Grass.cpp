@@ -2,15 +2,19 @@
 #include "Grass.h"
 
 
-string Grass::getTileType()
+void Grass::draw()
 {
-	return ".";
+	cout<< ".";
 }
 
 Grass::Grass(const int x, const int y)
 {
 	Point p(x, y);
-	grass = ".";
+	grass= ".";
+}
+
+Grass::Grass()
+{
 }
 
 

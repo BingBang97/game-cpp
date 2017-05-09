@@ -13,7 +13,7 @@ using namespace std;
 int menu::Menu()
 {
 	int choice, wyborPostaci, healthPoints, damage, defence, xp, value;
-	int width, length;
+	int width, height;
 	Hero *character;
 	Monster *monster;
 	CharacterEditor editor;
@@ -112,14 +112,14 @@ int menu::Menu()
 			editor.editMonster(wyborPostaci);
 			break;
 		case 9:
-			cout << "Podaj szerokosc mapy: " << endl;
+			cout << "Podaj szerokosc mapy: ";
 			cin >> width;
-			cout << "Podaj dlugosc mapy: " << endl;
-			cin >> length;
-			m.generateMap(length,width);
+			cout << "Podaj wysokosc mapy: ";
+			cin >> height;
+			m.generateMap(width,height);
 			break;
 		case 10:
-			m.drawMap(length,width);
+			m.drawMap(width,height);
 			break;
 		default:
 			cout << "Zly wybor" << endl;

@@ -7,8 +7,9 @@ class Grass:public Tile
 private:
 	string grass;
 public:
-	string getTileType();
+	void draw();
 	Grass(const int x,const int y);
+	Grass();
 	~Grass();
 };
 

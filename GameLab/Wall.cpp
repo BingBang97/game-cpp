@@ -2,15 +2,19 @@
 #include "Wall.h"
 
 
-string Wall::getTileType()
+void Wall::draw()
 {
-	return "W";
+	cout<< "W";
 }
 
 Wall::Wall(const int x, const int y)
 {
 	Point p(x, y);
-	wall = "W";
+	wall= "W";
+}
+
+Wall::Wall()
+{
 }
 
 

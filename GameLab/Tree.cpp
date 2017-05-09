@@ -2,15 +2,20 @@
 #include "Tree.h"
 
 
-string Tree::getTileType()
+void Tree::draw()
 {
-	return "T";
+	cout<< "T";
 }
 
 Tree::Tree(const int x,const int y)
 {
 	Point p(x, y);
-	tree = "T";
+	tree="T";
+}
+
+Tree::Tree()
+{
+	
 }
 
 

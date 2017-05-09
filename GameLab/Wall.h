@@ -7,8 +7,9 @@ class Wall:public Tile
 private:
 	string wall;
 public:
-	string getTileType();
+	void draw();
 	Wall(const int x, const int y);
+	Wall();
 	~Wall();
 };
 

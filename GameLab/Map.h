@@ -12,12 +12,10 @@ class Map
 {
 private:
 	vector<vector<shared_ptr<Tile>>>maps;
-	int length, width;
+	int width,heigth;
 public:
 	void generateMap(int lenght,int width);
 	void drawMap(int length, int width);
-	void toString();
 	Map();
 	~Map();
 };
-ostream &operator<<(ostream &out, Tile* m);
